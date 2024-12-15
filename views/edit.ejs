@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Student Info: <%= student.name %></h1>
+        <div class="container">
+            <form method="post" action="/home/<%=student.id%>?_method=PATCH">
+                <input type="text" placeholder="Enter Name" name="name" class="enter"><br>
+                <!-- <input type="text" placeholder="date Of Birth" name="dob" class="enter"><br> -->
+                <input type="text" placeholder="Age" name="age" class="enter"><br>
+                <input type="text" placeholder="Department" name="department" class="enter"><br>
+                <!-- <input type="text" placeholder="Gender" name="gender" class="enter"><br> -->
+                <input type="text" placeholder="attendence" name="attendence" class="enter"><br>
+                <input type="text" placeholder="Phone No" name="contact" class="enter"><br>
+                <input type="text" placeholder="email" name="email" class="enter"><br>
+                <input type="text" placeholder="address" name="address" class="enter"><br>
+                <input type="text" placeholder="city" name="city" class="enter"><br>
+                <input type="text" placeholder="country" name="country" class="enter"><br>
+                <input type="text" placeholder="Password" name="password" class="enter">
+                <!-- <input type="text" placeholder="Father Name" name="father" class="enter"><br> -->
+                <!-- <input type="text" placeholder="Mother Name" name="mother" class="enter"><br> -->
+                <!-- <input type="text" placeholder="Father Occupation" name="foccupation" class="enter"><br> -->
+                <!-- <input type="text" placeholder="Mother Occupation" name="moccupation" class="enter"><br> -->
+                <!-- <button class="enter">Submit</button> -->
+                <div>
+                    <button class="enter">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

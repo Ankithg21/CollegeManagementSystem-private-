@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Page</title>
+    <link rel="stylesheet" href="/style3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1 class="heading">Details of <%=result[0]["name"]%></h1>
+        </div>
+        <div class="main">
+            <h3>Name:<%= result[0]["name"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Date of Birth:<%= result[0]["dob"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Age:<%= result[0]["age"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Department:<%= result[0]["department"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Gender:<%= result[0]["gender"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Attendence:<%= result[0]["attendence"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Contact:<%= result[0]["contact"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Email:<%= result[0]["email"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Address:<%= result[0]["address"] %></h3>
+        </div>
+        <div class="main">
+            <h3>City:<%= result[0]["city"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Country:<%= result[0]["country"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Father name:<%= result[0]["father"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Mother name:<%= result[0]["mother"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Father Occupation:<%= result[0]["foccupation"] %></h3>
+        </div>
+        <div class="main">
+            <h3>Mother Occupation:<%= result[0]["moccupation"] %></h3>
+        </div>
+    </div>
+    <div>
+        <a href="http://localhost:1234/home" class="anchor">Return to Home</a>
+    </div>
+</body>
+</html>

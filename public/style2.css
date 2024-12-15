@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .main{
+    display: flex;
+
+} */
+
+h2{
+    color: maroon;
+}
+.container{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(250, 215, 221);
+}
+
+.enter{
+    width: 300px;
+    height: 25px;
+    border-style: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    <div class="hdiv">
+        <h1 class="heading">ALL STUDENTS DETAILS</h1>
+    </div>
+
+    <div class="divv">
+        <a href="http://localhost:1234/home/form" class="align">Add New Student</a>
+    </div>
+    <!-- <a href="" class="align">Add New Student</a> -->
+    
+    <%for(let i=0;i<result.length;i=i+1){%>
+        <div class="main">
+            <div>
+                <h2 class="margin"><%=result[i]["name"]%></h2>
+            </div>
+            
+            <div class="btn">
+                <h3 class="dept">CSE Dept</h3>
+                <a href='http://localhost:1234/home/<%=result[i]["id"]%>/view' class="anchor">View</a>
+                <a href='http://localhost:1234/home/<%=result[i]["id"]%>/edit' class="anchor">Edit</a>
+                <form method="post" action="/home/<%= result[i]["id"] %>?_method=DELETE">
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+    <%}%>
+    
+</body>
+</html>
+
+
