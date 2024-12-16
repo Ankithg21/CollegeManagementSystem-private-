@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #ff0000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            font-size: 28px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            background: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-card img {
+            width: 100%;
+            height: auto;
+        }
+        .video-info {
+            padding: 15px;
+        }
+        .video-info h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .video-info p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube Courses Playlists </h1>
+        <div class="search-bar">
+        </div>
+    </header>
+    <div class="content">
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/XslI8h7cGDs/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC5AiDzTP66_YICxUlnE8ZBJrZjww" alt="Video Thumbnail">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=XslI8h7cGDs&list=PLxCzCOWd7aiFM9Lj5G9G_76adtyb4ef7i" target="_blank"><h3> Thoery of Computation </h3></a>
+                <p>Gate Smashers • 1.35M views • 3 years ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/JFF2vJaN0Cw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAW1tvQ7ta2_jnNIBNXWaWm5tH_Vg" alt="Video Thumbnail">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=JFF2vJaN0Cw&list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" target="_blank"><h3>Computer Networks </h3></a>
+                <p>Gate Smashers • 2M views • 1 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/uB3i-qV6VdM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCLN8GPAO-Ks0snXt6jCmTAeuDcIg" alt="Video Thumbnail">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=uB3i-qV6VdM&list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI" target="_blank"><h3>Artificial Intelligence </h3></a>
+                <p>Gate Smashers • 1.1M views • 2 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/jyv9paQDYy0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA9seOfYakYlsRIabrD_lMrDNi-RA" alt="Video Thumbnail">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=jyv9paQDYy0&list=PLk3poRqYftlhDGto5oSxeNeFWHzajbVuA" target="_blank"><h3>Research Methodology </h3></a>
+                <p>Pooja Singh • 2.1M views • 2 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/uJpQlyT_CK4/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAsv7lHthYTJP3zY2ZYvvJVDoLEqQ" alt="Video Thumbnail">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=uJpQlyT_CK4&list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2" target="_blank"><h3> Software Engineering </h3></a>
+                <p>Gate Smashers • 1.1M views • 2 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/HcOc7P5BMi4/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCGeG1qdrS-xqcWh0pMNqH1yJi6Vg">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i" target="_blank"> <h3> web development </h3></a>
+                <p> Apna College • 1.1M views • 2 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/kz184QIO4ZQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCSb9kX4lIe6ZUY8FH4nd-edgRUvw">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=kz184QIO4ZQ&list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T" target="_blank"> <h3> data science and ML  </h3></a>
+                <p> Gate Smashers • 1.5M views • 2 year ago</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/T1fkvT1uPj8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBn0RhvDbavPONS7P2jA0iF8uIH7A">
+            <div class="video-info">
+                <a href="https://www.youtube.com/watch?v=T1fkvT1uPj8&pp=ygUdb29wcyB3aXRoIGMrKyBjb21wbGV0ZSBjb3Vyc2U%3D" target="_blank"> <h3>OOPs in C++ </h3></a>
+                <p> College Wallah • 1.5M views • 1 year ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

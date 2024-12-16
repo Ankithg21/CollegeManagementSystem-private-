@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(255, 207, 215);
+            /* linear-gradient(135deg, #9b59b6, #8e44ad); */
+        }
+
+        .container {
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 500px;
+            max-width: 90%;
+        }
+
+        .form-container {
+            padding: 30px;
+            flex: 1;
+        }
+
+        .form-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-container p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .form-container a {
+            color: #8e44ad;
+            text-decoration: none;
+        }
+
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #8e44ad;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-container button:hover {
+            background: #732d91;
+        }
+
+        .form-container .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .form-container .social-login button {
+            flex: 1;
+            margin: 0 5px;
+            background: #ddd;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form-container .social-login button.google {
+            background: #db4437;
+            color: #fff;
+        }
+
+        .form-container .social-login button.facebook {
+            background: #3b5998;
+            color: #fff;
+        }
+
+        .image-container {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      border : 1px solid black;
+        }
+        .hero .btn {
+            background: #37D7B2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .hero .btn:hover {
+            background: #2BB291;
+        }
+        .btn{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <p>Don't have an account yet? <a href="http://localhost:1234/signup">Sign Up</a></p>
+            <form method="post">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter 8 characters or more" required>
+
+                <!-- <div>
+                    <a href="#" style="float: right;">Forgot Password?</a><br>
+                </div><br> -->
+
+                <a href="http://localhost:1234/home" class="btn">LOGIN</a>
+            </form>
+        </div>
+        <!-- <div class="image-container">
+            <img ssrc="https://imgs.search.brave.com/gEBsSwv9TArIsUpGKdcbQ6qiSg8kSEiOCSuIA13Hukc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVtcGxhdGUu/bmV0LzQ1NDg3Mi9G/YW5jeS1TaWduLVRl/bXBsYXRlLWVkaXQt/b25saW5lLnBuZw">
+        </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #6C5DD3, #8E44AD);
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .header .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .header .contact {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header .contact .phone {
+            background: orange;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .hero .btn {
+            background: #37D7B2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .hero .btn:hover {
+            background: #2BB291;
+        }
+
+        .illustration {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .illustration img {
+            max-width: 80%;
+            border-radius: 15px;
+        }
+
+        .stats {
+            text-align: center;
+            background: white;
+            color: #333;
+            padding: 50px 20px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        .stats h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .stats p {
+            font-size: 16px;
+        }
+
+        
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+  }
+
+  .footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section ul {
+    list-style: none;
+  }
+
+  .footer-section li {
+    margin: 10px 0;
+  }
+
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-section a:hover {
+    color: #f4a261;
+  }
+
+
+  .about-section {
+            background: #ffffff;
+            padding: 50px;
+            margin: 50px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .about-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 18px;
+            text-align: justify;
+        }
+        
+        .btn{
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <img src="https://ewce.edu.in/img/logo.png">
+
+            
+        </div>
+
+        <nav class="nav">
+            <!-- <a href="http://localhost:1234/home">Home</a> -->
+            <!-- <a href="#">Student info </a> -->
+            <a href="http://localhost:1234/faculty">Faculty info </a>
+            <!-- <a href="#">Attendance</a> -->
+            <a href="http://localhost:1234/course">Courses Playlist </a>
+            <a href="http://localhost:1234/about">About</a>
+            <!-- <a href="#">Contact</a> -->
+        </nav>
+        <!-- <div class="contact">
+            <a href="#" class="login">Log In</a>
+        </div> -->
+    </header>
+
+    <section class="hero">
+        <h1> College Management System </h1>
+        <p> Your journey to a great future begins here... </p>
+        <a href="http://localhost:1234/login" class="btn">Login</a>
+        <!-- <button class="btn"> Login </button> -->
+    </section>
+
+    <div class="about-section">
+        <h2>About Our College</h2>
+        <p><strong>Affiliated to Visvesvaraya Technological University (VTU), Belagavi</strong></p>
+        <p>East West College of Engineering established in 2015 with the prime motto to serve the best quality-based technical education. The campus is advantageously located in the well-known green city of Bengaluru and has an extensive vicinity of 5 acres of land surrounded by a serene and pleasant learning atmosphere.</p>
+        <p>EWCE has always stood for discipline and the molding of character of its students. Our college prides itself on imparting quality education by providing a strong foundation for holistic learning. East West College of Engineering stands testimony to the high professional standards aimed for and achieved by the EWGI.</p>
+    </div>
+
+    <div class="illustration">
+        <img src="https://imgs.search.brave.com/UhQLg0FTUrcQtLWz6Yck9gxZwJG5GXGiK9tm1UIt7gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/YmFuZ2Fsb3JlL2gy/LzA4MHB4eDgwLnh4/ODAuMTUwNzE0MTYz/MTA1LnU2aDIvY2F0/YWxvZ3VlL2Vhc3Qt/d2VzdC1jb2xsZWdl/LW9mLWVuZ2luZWVy/aW5nLXllbGFoYW5r/YS1uZXctdG93bi1i/YW5nYWxvcmUtZW5n/aW5lZXJpbmctY29s/bGVnZXMtb3dnY29y/Z201ay5qcGc_Y2xy/PSMzOTJkMzk_dz0z/ODQwJnE9NzU" alt="Illustration">
+    </div>
+
+    
+
+    <section class="stats">
+        <h3> East West College of Engineering - A proud limb of East West Group of Institutions, Bengaluru.
+
+        </h3>
+        <p>Join thousands of students who have started their journey with us.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-section">
+            <h3>Get in touch with us</h3>
+            <p><strong>East West College of Engineering</strong></p> <br>
+            <p>CA Site No. 13, 13th A Main Road,<br>Sector A, Major Akshay Kumar Road,<br>Yelahanka New Town, Bengaluru-560064.</p>
+            <p>080 28566115/116<br>+91 9844671611</p> <br>
+            <p>Email: <a href="mailto:principal.ewce@gmail.com">principal.ewce@gmail.com</a></p>
+          </div>
+      
+          <div class="footer-section">
+            <h3> Departments Offered </h3>
+            <ul>
+              <li><a href="#">Aeronautical Engineering</a></li>
+              <li><a href="#">Agriculture Engineering</a></li>
+              <li><a href="#">Computer Science & Engineering</a></li>
+              <li><a href="#">Electronics & Communication Engineering</a></li>
+              <li><a href="#">Mechanical Engineering</a></li>
+              <li><a href="#">Basic Science & Humanities</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="#">Principal's Desk</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

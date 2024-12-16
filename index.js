@@ -156,6 +156,45 @@ app.delete("/home/:id",(req,res)=>{
     }
 });
 
+app.get("/welcome",(req,res)=>{
+    res.render("welcome.ejs"); 
+});
+
+app.get("/course",(req,res)=>{
+    res.render("course.ejs");
+});
+
+app.get("/faculty",(req,res)=>{
+    res.render("faculty.ejs");
+});
+
+app.get("/login",(req,res)=>{
+    res.render("login.ejs");
+});
+
+// app.post("/login",(req,res)=>{
+//     let pass=req.body.password;
+//     let user=req.body.email;
+//     let q=`SELECT * FROM login WHERE email='${user}'`;
+//     try{
+//         connection.query(q,(err,result)=>{
+//             if(err)throw err;
+//             console.log(result);
+//         })
+//     }
+//     catch(err){
+//         res.send("error Occured.");
+//     }
+// });
+
+app.get("/signup",(req,res)=>{
+    res.render("signup.ejs");
+});
+
+app.get("/about",(req,res)=>{
+    res.render("about.ejs");
+});
+
 app.listen(port,()=>{
     console.log(`server running at port ${port}.`);
 });
